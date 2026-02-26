@@ -2,9 +2,9 @@
 
 Explainable ML models protecting African users from mobile money scams.
 
-[![GitHub license](https://img.shields.io/github/license/VigilantAI/vigilant-ai-ml)](https://github.com/VigilantAI/vigilant-ai-ml/blob/main/LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/VigilantAI/vigilant-ai-ml)](https://github.com/VigilantAI/vigilant-ai-ml/issues)
-[![GitHub stars](https://img.shields.io/github/stars/VigilantAI/vigilant-ai-ml)](https://github.com/VigilantAI/vigilant-ai-ml/stargazers)
+[![GitHub license](https://img.shields.io/github/license/VigilantAIAfrica/vigilant-ai-ml)](https://github.com/VigilantAIAfrica/vigilant-ai-ml/blob/main/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/VigilantAIAfrica/vigilant-ai-ml)](https://github.com/VigilantAIAfrica/vigilant-ai-ml/issues)
+[![GitHub stars](https://img.shields.io/github/stars/VigilantAIAfrica/vigilant-ai-ml)](https://github.com/VigilantAIAfrica/vigilant-ai-ml/stargazers)
 
 ## Features
 - Lightweight models for offline use on cheap phones.
@@ -24,10 +24,10 @@ Explainable ML models protecting African users from mobile money scams.
 4. Train model: `python scripts/train.py`.
 
 ## Roadmap
-See our organization-wide roadmap at [VigilantAI/vigilant-ai-docs](https://github.com/VigilantAI/vigilant-ai-docs#roadmap).
+See our organization-wide roadmap at [VigilantAI/vigilant-ai-docs](https://github.com/VigilantAIAfrica/vigilant-ai-docs#roadmap).
 
 ## Contributing
-African ML enthusiasts welcome! Fork, experiment, PR. Follow [code of conduct](https://github.com/VigilantAI/.github/blob/main/CODE_OF_CONDUCT.md).
+African ML enthusiasts welcome! Fork, experiment, PR. Follow [code of conduct](https://github.com/VigilantAIAfrica/.github/blob/main/CODE_OF_CONDUCT.md).
 
 ## License
 MIT License - see [LICENSE](LICENSE) for details.
