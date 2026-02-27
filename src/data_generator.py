@@ -14,7 +14,7 @@ def generate_message(is_scam, language="English", country="Kenya"):
                 "M-Pesa confirmation: You sent KSh 500 to John. Time: 14:30",
                 "You have received KSh 1200 from Mama Mboga. New balance KSh 4500"
             ])
-    elif language == "Swahili":  # Real-world: Use translations for authenticity
+    elif language == "Swahili":
         if is_scam:
             return random.choice([
                 "Mteja mpendwa, akaunti yako ya M-Pesa iko hatarini! Bofya hapa kuthibitisha: http://fake-mpesa.com",
@@ -26,23 +26,25 @@ def generate_message(is_scam, language="English", country="Kenya"):
                 "Thibitisho la M-Pesa: Umetuma KSh 500 kwa John. Saa: 14:30",
                 "Umetumiwa KSh 1200 kutoka Mama Mboga. Salio jipya KSh 4500"
             ])
-    # Add Nigeria/Ghana later – e.g., for Nigeria: "USSD code for bank scam"
 
-# Create 15,000 as per roadmap (deep: More data = better ML, but start small to test)
+country = "Kenya"
+
 data = []
+
 for i in range(15000):
     is_scam = random.random() < 0.05
-    lang = random.choice(["English", "Swahili"]) if country == "Kenya" else "English"
-    message = generate_message(is_scam, lang, country="Kenya")  # Expand to others
+    lang = random.choice(["English", "Swahili"])
+    message = generate_message(is_scam, lang, country)
+
     data.append({
         "message": message,
-        "is_fraud": is_scam,
+        "is_fraud": int(is_scam),
         "language": lang,
-        "country": "Kenya"  # Later: random.choice(["Kenya", "Nigeria", "Ghana"])
+        "country": country
     })
 
 df = pd.DataFrame(data)
 df.to_csv("data/synthetic_african_fraud_data.csv", index=False)
+
 print("✅ Done! Created 15,000 messages.")
 print("Scams:", df["is_fraud"].sum())
-print(df.head())

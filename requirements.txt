@@ -3,3 +3,7 @@ tensorflow
 jupyter
 pandas
 numpy
+streamlit
+matplotlib
+imbalanced-learn
+joblib
